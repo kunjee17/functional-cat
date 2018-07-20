@@ -29,7 +29,7 @@ module App =
         | FetchError of exn  
 
 
-    let initModel = { Id = "tl"; SourceUrl = "http://thecatapi.com/?id=tl"; Url = "http://25.media.tumblr.com/tumblr_m2rdm4welu1qjahcpo1_1280.jpg" }
+    let initModel = { Id = ""; SourceUrl = ""; Url = "" }
 
     let fetchNewCat =
         async {
