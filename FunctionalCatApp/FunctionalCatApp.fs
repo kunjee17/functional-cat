@@ -2,8 +2,8 @@
 namespace FunctionalCatApp
 
 open System.Diagnostics
-open Elmish.XamarinForms
-open Elmish.XamarinForms.DynamicViews
+open Fabulous.Core
+open Fabulous.DynamicViews
 open Xamarin.Forms
 open System
 open System.Net
@@ -65,9 +65,9 @@ module App =
     </response>
     """
 
-    //type CatProvider = XmlProvider<catXMl>
+    type CatProvider = XmlProvider<catXMl>
 
-    //let sample = CatProvider.Load(catXMl)
+    let sample = CatProvider.Load(catXMl)
 
 
 

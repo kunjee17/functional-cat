@@ -9,14 +9,14 @@
     <Compile Include="FunctionalCatApp.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.912540" />
     <PackageReference Include="Xamarin.Essentials" Version="0.6.0-preview" />
-    <PackageReference Include="Elmish.XamarinForms" Version="0.14.8" />
-    <PackageReference Include="Elmish.XamarinForms.LiveUpdate" Version="0.14.8" />
     <PackageReference Include="FSharp.Core" Version="4.5.0" />
-    <PackageReference Update="FSharp.Core" Version="4.5.0" /> <!-- workaround for VSMac bug https://github.com/mono/monodevelop/pull/5137 --> 
+    <PackageReference Update="FSharp.Core" Version="4.5.2" /> <!-- workaround for VSMac bug https://github.com/mono/monodevelop/pull/5137 --> 
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="FSharp.Data" Version="2.4.6" />
+    <PackageReference Include="FSharp.Data" Version="3.0.0" />
     <PackageReference Include="System.Xml.XDocument" Version="4.3.0" />
+    <PackageReference Include="Fabulous.Core" Version="0.24.0" />
+    <PackageReference Include="Fabulous.LiveUpdate" Version="0.24.0" />
   </ItemGroup>
 </Project>
