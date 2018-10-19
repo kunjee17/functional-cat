@@ -65,9 +65,9 @@ module App =
     </response>
     """
 
-    type CatProvider = XmlProvider<catXMl>
+    //type CatProvider = XmlProvider<catXMl>
 
-    let sample = CatProvider.Load(catXMl)
+    //let sample = CatProvider.Load(catXMl)
 
 
 
