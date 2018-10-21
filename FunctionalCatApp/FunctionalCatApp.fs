@@ -65,21 +65,17 @@ module App =
     </response>
     """
 
-    //type CatProvider = XmlProvider<catXMl>
-
-    //let sample = CatProvider.Load(catXMl)
-
+    type CatProvider = XmlProvider<catXMl>
 
 
     let update msg model =
         match msg with
         | Fetched s ->
-            let catDoc = XDocument.Parse(s)
-            let imageElement = catDoc.Element(XName.Get("response")).Element(XName.Get("data")).Element(XName.Get("images")).Element(XName.Get("image"))
+            let catDoc = CatProvider.Parse(s)
             {
-                Id = imageElement.Element(XName.Get("id")).Value
-                Url = imageElement.Element(XName.Get("url")).Value
-                SourceUrl = imageElement.Element(XName.Get("source_url")).Value
+                Id = catDoc.Data.Image.Id
+                Url = catDoc.Data.Image.Url
+                SourceUrl = catDoc.Data.Image.SourceUrl
             }, Cmd.none
         | FetchError exn -> 
             model, Cmd.none
